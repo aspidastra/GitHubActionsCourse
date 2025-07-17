@@ -3,12 +3,12 @@ name: hello-world
 on: push
 
   jobs:
-    hello-world-job
+    hello-world-job:
   
-run-ons: ubuntu-latest
+    run-ons: ubuntu-latest
 
-  steps:
-    - name: check out repository code
-      uses: actions/checkout@v4
-    - run: echo "$(cat hello_world.txt)"
-    
+    steps:
+  
+      - name: check out repository code
+        uses: actions/checkout@v4
+      - run: echo "$(cat hello_world.txt)"
